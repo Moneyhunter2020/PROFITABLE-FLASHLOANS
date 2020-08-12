@@ -193,7 +193,7 @@
   "sourceMap": "",
   "deployedSourceMap": "",
   "source": "pragma solidity ^0.5.0;\r\n\r\n// https://github.com/ethereum/EIPs/issues/20\r\ncontract ERC20 {\r\n    function totalSupply() public view returns (uint supply);\r\n    function balanceOf(address _owner) public view returns (uint balance);\r\n    function transfer(address _to, uint _value) public returns (bool success);\r\n    function transferFrom(address _from, address _to, uint _value) public returns (bool success);\r\n    function approve(address _spender, uint _value) public returns (bool success);\r\n    function allowance(address _owner, address _spender) public view returns (uint remaining);\r\n    function decimals() public view returns(uint digits);\r\n    event Approval(address indexed _owner, address indexed _spender, uint _value);\r\n}\r\n",
-  "sourcePath": "C:\\Users\\NIRANJANA\\eattheblocks\\profitable-flashloans\\PROFITABLE-FLASHLOAN\\contracts\\IERC20.sol",
+  "sourcePath": "C:/Users/NIRANJANA/eattheblocks/profitable-flashloans/PROFITABLE-FLASHLOAN/contracts/IERC20.sol",
   "ast": {
     "absolutePath": "/C/Users/NIRANJANA/eattheblocks/profitable-flashloans/PROFITABLE-FLASHLOAN/contracts/IERC20.sol",
     "exportedSymbols": {
@@ -1777,8 +1777,8 @@
     "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.2.0",
-  "updatedAt": "2020-07-12T05:33:51.194Z",
+  "schemaVersion": "3.2.2",
+  "updatedAt": "2020-07-20T15:58:32.264Z",
   "devdoc": {
     "methods": {}
   },

@@ -1,5 +1,5 @@
+require('dotenv').config();
 const HDWalletProvider = require('@truffle/hdwallet-provider');
-require("dotenv").config()
 /**
  * Use this file to configure your truffle project. It's seeded with some
  * common settings for different networks and features like migrations,
@@ -27,7 +27,6 @@ require("dotenv").config()
 // const mnemonic = fs.readFileSync(".secret").toString().trim();
 
 module.exports = {
-    
   /**
    * Networks define how you connect to your ethereum client and let you set the
    * defaults web3 uses to send transactions. If you don't specify one truffle
@@ -53,29 +52,23 @@ module.exports = {
 
     // Another network with more advanced options...
     // advanced: {
-     // port: 8777,             // Custom port
-    //network_id: 1,       // Custom network
-     // gas: 8500000,           // Gas sent with each transaction (default: ~6700000)
-      //gasPrice: 20000000000,  // 20 gwei (in wei) (default: 100 gwei)
+      // port: 8777,             // Custom port
+      // network_id: 1342,       // Custom network
+      // gas: 8500000,           // Gas sent with each transaction (default: ~6700000)
+      // gasPrice: 20000000000,  // 20 gwei (in wei) (default: 100 gwei)
       // from: <address>,        // Account to send txs from (default: accounts[0])
       // websockets: true        // Enable EventEmitter interface for web3 (default: false)
     // },
 
-     mainnet : {
-       
+    mainnet: {
+      
       provider: () => new HDWalletProvider(
         process.env.PRIVATE_KEY, 
-        process.env.INFURA_URL ,
-        
+        process.env.INFURA_URL
       ),
-     
-      network_id: 1,
-       
-      gas: 4000000,
-      gasprice:50000000000,
+      network_id: 1,       //mainnet,
+      gas: 6000000,
       
-
-            //mainnet 
     },
 
     // Useful for private networks
@@ -88,12 +81,7 @@ module.exports = {
 
   // Set default mocha options here, use special reporters etc.
   mocha: {
-    
-    //enableTimeouts: false,
-    //before_timeout:12000000,
-
-       timeout: 1200000,
-
+     timeout: 100000
   },
 
   // Configure your compilers

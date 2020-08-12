@@ -15153,8 +15153,8 @@
     "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.2.0",
-  "updatedAt": "2020-07-12T05:33:51.255Z",
+  "schemaVersion": "3.2.2",
+  "updatedAt": "2020-07-20T15:58:32.526Z",
   "devdoc": {
     "methods": {}
   },
